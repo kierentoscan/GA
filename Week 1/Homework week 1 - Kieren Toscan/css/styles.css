@@ -1,0 +1,93 @@
+body {
+	background: #ffffff;
+	color: black;
+	font-family: sans-serif; Times, Serif;
+	margin: 12px;
+	height: 100%;
+
+}
+
+h1, nav {
+	text-align: center;
+
+}
+
+nav	{
+	font-size: 15px;
+}
+
+h1	{
+	font-size: 30px;
+}
+
+h2	{
+	font-size: 20px;
+}
+
+h3	{
+	font-size: 16px;
+}
+
+h4	{
+	font-size: 14px;
+}
+
+h3, p {
+	display: inline;
+
+}
+
+p 	{
+	font-size: 12px;
+}
+
+hr	{
+	line-height: 2px;
+}
+img {
+	float: left;
+
+}
+
+li {
+	font-size: 12px;
+}
+
+#Sidebar {
+	width: 33%;
+	float: left;
+}	
+
+#personal_details {
+	float: left;
+	width: 67%;
+	padding-bottom: 0px;
+}
+
+#professional_history {
+	float: left;
+	width: 67%;
+	padding-bottom: 30px;
+	margin-bottom: 30px;
+}
+
+#footer_pd {
+	position:absolute;
+   	bottom:0;
+   	width:100%;
+   	height:50px;
+}
+
+#footer_ph {
+	position:relative;
+   	bottom: 50px;
+   	width:100%;
+   	height:50px;
+   	z-index: -1;
+}
+
+}
+#container {
+   min-height:100%;
+   position:relative;
+}
