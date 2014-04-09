@@ -41,3 +41,15 @@ var nameAndAge = function(name, age) {
 }
 
 console.log(nameAndAge("Kieren", 36));	
+
+// Random Number function
+
+function getRandomArbitrary(min, max) {
+  
+  return (Math.random() * (max - min) + min).toFixed(0);
+ 
+}
+
+console.log(getRandomArbitrary(1, 3))
+
+
