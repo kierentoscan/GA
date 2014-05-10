@@ -1,0 +1,97 @@
+<html>
+  <head>
+    <title>Sign Up form</title>
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <div class="page">
+      <h1>Sign Up</h1>
+
+      	<form action="#" method="post">
+      		<fieldset>
+      			<label for="username">Username</label>
+      			<input type="text" name="username" id="username" required placeholder=
+      			"Kieren" autofocus>
+      		</fieldset>
+
+      		<fieldset>
+      			<label for="password">Password</label>
+      				<input type="password" name="password" id="password" required>
+     		</fieldset>	
+
+      		<fieldset>
+      			<label for="email">Email</label>
+      				<input type="email" name="email" id="email" required placeholder="something@something.com" disabled>
+     		</fieldset>	
+
+     		<fieldset>
+      			<label for="excitedness">Excitedness</label>
+      				<input type="range" min="0" max"10" step="1"><!-- Need to use Javascript to pull out the data from this i.e. there is no easy way to get the information from this in - attached behaviour -->
+     		</fieldset>	
+
+     		<fieldset>
+      			<label for="dob">Date of Birth</label>
+      				<input type="date" name="dob" id="dob">
+     		</fieldset>	
+
+     		<fieldset>
+      			<legend>Favourite Pizza topping</legend>
+      				<label>
+						<input type="radio" name="pizza" value="pepperoni" required checked>
+						Pepperoni
+					</label>
+					<label>
+						<input type="radio" name="pizza" value="pineapple">
+						Pineapple
+					</label>
+					<label>
+						<input type="radio" name="pizza" value="mushroom">
+						Mushroom
+					</label>      			
+     		</fieldset>	
+
+<!-- in the checkbox below using the square brackets after the name tells it to create an array when passing the result -->
+
+     		<fieldset>
+      			<legend>Favourite Colours</legend>
+      				<label>
+						<input type="checkbox" name="colour[]" value="red">
+						Red
+					</label>
+					<label>
+						<input type="checkbox" name="colour[]" value="blue">
+						Blue
+					</label>
+					<label>
+						<input type="checkbox" name="colour[]" value="green">
+						Green
+					</label>
+			</fieldset>
+
+			<fieldset>
+      				<label for="drink">Favourite Drink</label>
+						<select name="drink" id="drink">
+
+							<optgroup label="Alcoholic">
+								<option value="beer">Beer</option>
+								<option value="wine">Wine</option>
+							</optgroup>
+
+							<optgroup label="Non-alcoholic">
+								<option value="cola">Cola</option>
+								<option value="water">Water</option>
+							</optgroup>
+						</select>
+
+			</fieldset>
+
+			<input type="submit" value="Rofl!">
+
+
+
+
+
+
+    </div>
+  </body>
+</html>
