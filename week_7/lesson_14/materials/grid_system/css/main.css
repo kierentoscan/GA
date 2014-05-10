@@ -1,0 +1,28 @@
+header,
+section,
+aside {
+
+	padding: 20px;
+}
+
+header {
+	background: #000;
+	color: white;
+}
+
+section {
+	background: #f35;
+
+}
+
+aside {
+	background: #9ef;
+}
+
+footer {
+	background: #5e3;
+}
+
+section section {
+	background: yellow;
+}
