@@ -31,7 +31,7 @@ $( document ).ready(function() {
 	trigger.click(function() {
 		nav.addClass('menu-open-all');
 
-	}):
+	});
 
 
 
