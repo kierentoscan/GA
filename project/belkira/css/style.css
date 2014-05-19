@@ -1,110 +1,110 @@
 
 body {
-	color: #000;
-	font-size: 1rem;
-	line-height: 1.4;
-	font-family: 'Lato', sans-serif;
-     
+     color: #000;
+     font-size: 1rem;
+     line-height: 1.4;
+     font-family: 'Lato', sans-serif;
+    
 }
 
 header {
-	margin-bottom: #000 solid;  
+     margin-bottom: #000 solid; 
 }
 
 h3 {
-	font-size: 2rem;
-	text-align: center;
-	font-family: 'Great Vibes', cursive;
-}	
+     font-size: 2rem;
+     text-align: center;
+     font-family: 'Great Vibes', cursive;
+}    
 
 footer {
-	height: 4rem;
-	background-color: black;
-	color: white;
-	text-align: center;
-	padding-top: 1.5em;
-	font-family: 'Lato', sans-serif;
-	font-weight: 100;
+     height: 4rem;
+     background-color: black;
+     color: white;
+     text-align: center;
+     padding-top: 1.5em;
+     font-family: 'Lato', sans-serif;
+     font-weight: 100;
 }
 
 header h1 {
-	font-family: 'Great Vibes', cursive;
-	font-size: 5rem;
-	text-align: right;
-	height: 6rem;
+     font-family: 'Great Vibes', cursive;
+     font-size: 5rem;
+     text-align: right;
+     height: 6rem;
 }
 
-	@media only screen and (max-width: 40em) { 
-		header h1 {
-			text-align: center;
-			margin-bottom: 0;
-		}
-	}
+     @media only screen and (max-width: 40em) {
+          header h1 {
+               text-align: center;
+               margin-bottom: 0;
+          }
+     }
 
 header h2 {
-	text-align: left;
-	padding-top: 3rem;
-	font-size: 2;
-	font-size: 1.5rem;
-	font-weight: 100;
+     text-align: left;
+     padding-top: 3rem;
+     font-size: 2;
+     font-size: 1.5rem;
+     font-weight: 100;
 }
 
-	@media only screen and (max-width: 40em) { 
-		header h2 {
-			text-align: center;
-			padding-top: 0;
-		}
-	}
+     @media only screen and (max-width: 40em) {
+          header h2 {
+               text-align: center;
+               padding-top: 0;
+          }
+     }
 
 nav div.small-3.columns {
-	text-align: center;
+     text-align: center;
 }
 
-	@media only screen and (max-width: 40em) { 
-		nav div.small-3.columns {
-			padding: 0 0 0 0;
-		}
-	}
+     @media only screen and (max-width: 40em) {
+          nav div.small-3.columns {
+               padding: 0 0 0 0;
+          }
+     }
 
 div.small-12.columns nav {
 
-	height: 1.5em;
-	border-top: 1px solid #D1D1D1;
-	border-bottom: 1px solid #D1D1D1;
-	padding-top: 0.1rem;
+     height: 1.5em;
+     border-top: 1px solid #D1D1D1;
+     border-bottom: 1px solid #D1D1D1;
+     padding-top: 0.1rem;
 }
 
 div#OrderHead h2 {
-	text-align: center;
-	font-family: 'Great Vibes', cursive;
-	border-bottom: 1px solid #D1D1D1;
+     text-align: center;
+     font-family: 'Great Vibes', cursive;
+     border-bottom: 1px solid #D1D1D1;
 }
 
 nav a {
-	font-family: 'Lato', sans-serif;
-	font-weight: 100;
-	color: #878787;	
+     font-family: 'Lato', sans-serif;
+     font-weight: 100;
+     color: #878787;    
 
 }
 
 nav a:hover {
-	color: #878787;
+     color: #878787;
 }
 
 /*CLASSES*/
 
 .sectionHead {
-	border-bottom: 1px solid #D1D1D1;
-	padding-bottom: 0;
-	margin-bottom: 0.5rem;
+     border-bottom: 1px solid #D1D1D1;
+     padding-bottom: 0;
+     margin-bottom: 0.5rem;
 }
 
 .nav-content {
-	display: none;
+     display: none;
 }
 
 .nav-header {
-	display: none;
+     display: none;
 }
 
 
@@ -131,16 +131,121 @@ nav a:hover {
         border: none;
 }
 
-/*IDS*/
+/*LAMB*/
 
 #lambInstructions p {
-	font-size: 0.75rem;
-	margin: 5px 0 5px 0;
-	text-align: center;
-	font-style: italic;
+     font-size: 0.75rem;
+     margin: 5px 0 5px 0;
+     text-align: center;
+     font-style: italic;
 }
 
+.lamb-tooltip-container {
+     position: relative; 
+     z-index: 101;
+}
 
+#lamby {
+     position: relative;
+     width: 705px auto;
+     height: 501px auto;
+     top: 0px;
+     left: 0px;
+     z-index: 102    
+}
+
+#hindshank-pos {
+     top: 57%;
+     left:79%;
+     position: absolute;
+     z-index: 103;
+     width: 10px;
+     height: 10px;
+}
+
+#leg-pos {
+     top: 35%;
+     left: 78%;    
+     position: absolute;
+     z-index: 103;
+     width: 10px;
+     height: 10px;
+}
+
+#loin-pos {
+     top: 12%;
+     left: 60%;
+     position: absolute;
+     z-index: 103;
+     width: 10px;
+     height: 10px;
+}
+
+#chump-pos {
+     top: 22%;
+     left: 68%;
+     position: absolute;
+     z-index: 103;
+     width: 10px;
+     height: 10px;
+}
+
+#breast-pos {
+     top: 40%;
+     left: 50%;
+     position: absolute;
+     z-index: 103;
+     width: 10px;
+     height: 10px;
+}
+
+#rack-pos {
+     top: 18%;
+     left: 45%;
+     position: absolute;
+     z-index: 103;
+     width: 10px;
+     height: 10px;
+}
+
+#shoulder-pos {
+     top: 35%;
+     left: 25%;
+     position: absolute;
+     z-index: 103;
+     width: 10px;
+     height: 10px;
+}
+
+#neck-pos {
+     top: 20%;
+     left: 21%;
+     position: absolute;
+     z-index: 103;
+     width: 10px;
+     height: 10px;
+}
+
+#foreshank-pos {
+     top: 52%;
+     left: 32%;
+     position: absolute;
+     z-index: 103;
+     width: 10px;
+     height: 10px;
+}
+
+.primal-cuts {
+     font-family: 'Great Vibes', cursive;
+     font-size: 1.1rem;
+     letter-spacing: .1rem;
+}
+
+@media only screen and (max-width: 40em) {
+          .primal-cuts {
+               font-size: .8rem;
+          }
+     }
 
 
 
@@ -162,9 +267,11 @@ nav a:hover {
     *zoom: 1;
 }
 
+/*ORDER*/
 
+#order-row {
 
-
+}
 
 
 
