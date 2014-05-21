@@ -18,13 +18,29 @@ h3 {
 }    
 
 footer {
-     height: 4rem;
-     background-color: black;
+     height: 3rem;
+     line-height: 1rem;
      color: white;
      text-align: center;
      padding-top: 1.5em;
      font-family: 'Lato', sans-serif;
      font-weight: 100;
+}
+
+footer ul {
+     padding: 0;
+     list-style: none;
+}
+
+footer li {
+     display: inline-block;
+}
+
+.footer-left,
+.footer-right   {
+    background-color: black;
+    height: 3rem;
+    line-height: 3rem;  
 }
 
 header h1 {
@@ -70,19 +86,22 @@ div.small-12.columns nav {
 
      height: 1.5em;
      border-top: 1px solid #D1D1D1;
-     border-bottom: 1px solid #D1D1D1;
      padding-top: 0.1rem;
 }
 
 div#OrderHead h2 {
-     text-align: center;
-     font-family: 'Great Vibes', cursive;
-     border-bottom: 1px solid #D1D1D1;
+    border-top: 1px solid #D1D1D1;
+    border-bottom: 1px solid #D1D1D1;
+    margin-top: 1rem;
+    text-align: center;
+    font-family: 'Great Vibes', cursive;
 }
+        
 
 nav a {
      font-family: 'Lato', sans-serif;
      font-weight: 100;
+     font-size: 0.9rem;
      color: #878787;    
 
 }
@@ -119,16 +138,27 @@ nav a:hover {
 
 .fluid-wrapper {
     position: relative;
-    padding-bottom: 56.25%; /* 16:9 */
-    height: 0;
 }
+
 .fluid-wrapper iframe {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-        border: none;
+    border: none;
+}
+
+/*MAP*/
+
+#map-canvas {
+    height: 380px;
+    width: 280px;
+    position: relative;
+}
+
+.gmnoprint img {
+    max-width: none; 
 }
 
 /*LAMB*/
@@ -156,7 +186,7 @@ nav a:hover {
 
 #hindshank-pos {
      top: 57%;
-     left:79%;
+     left:78%;
      position: absolute;
      z-index: 103;
      width: 10px;
@@ -228,7 +258,7 @@ nav a:hover {
 
 #foreshank-pos {
      top: 52%;
-     left: 32%;
+     left: 29%;
      position: absolute;
      z-index: 103;
      width: 10px;
@@ -237,7 +267,7 @@ nav a:hover {
 
 .primal-cuts {
      font-family: 'Great Vibes', cursive;
-     font-size: 1.1rem;
+     font-size: 1rem;
      letter-spacing: .1rem;
 }
 
@@ -267,11 +297,118 @@ nav a:hover {
     *zoom: 1;
 }
 
+/*Social*/
+
+/*Image replacement*/
+.ir {
+     text-indent: 100%;
+     white-space: nowrap;
+     overflow: hidden;  
+}
+
+.sprite {
+     background: url('../images/sprites.png') no-repeat;
+}
+
+.social-icons a {
+     display: block;
+     width: 48px;
+     height: 48px;
+}
+
+.facebook {
+     background-position: 0 0;
+}
+
+.facebook:hover {
+     background-position-y: -50px;
+}
+
+.twitter {
+     background-position: -50px 0;
+}
+
+.twitter:hover {
+     background-position-y: -50px;
+}
+
+.google {
+     background-position: -100px 0;
+}
+
+.google:hover {
+     background-position-y: -50px;
+}
+
+.instagram {
+     background-position: -150px 0;
+}
+
+.instagram:hover {
+     background-position-y: -50px;
+}
+
 /*ORDER*/
 
-#order-row {
+.cut-type-header {
+    border-bottom: 1px solid #D1D1D1;
+    height: 1.5rem; 
+    margin-bottom: 5px;
+    font-weight: 300;
+}
+
+.stock-item {
+    line-height: 2.3125rem;
+    font-weight: 200;
+    font-size: 1rem;
+}
+
+.cut-head-right {
+    text-align: right;
 
 }
+
+
+.line-total  {
+    text-align: right;
+    font-weight: 300;
+}
+
+.grand-total-line {
+font-weight: 200;
+font-size: 0.9rem;
+border-top: 2px solid #d1d1d1;
+}
+
+#grand-total {
+    text-align: right;
+    font-weight: bold;
+}
+
+.contact-header {
+    border-bottom: 1px solid #D1D1D1;
+    height: 1.5rem; 
+    margin-bottom: 5px;
+    font-weight: 300;
+}
+
+.number-form {
+    text-align: right;
+    height: 1rem;
+    font-weight: 100;
+
+}
+
+.text-form {
+    text-align: left;
+}
+
+.contact-row {
+    line-height: 2.3125rem;
+    font-weight: 200;
+    font-size: 1rem;
+}
+
 
 
 
