@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/foundation.min.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400|Great+Vibes' rel='stylesheet' type='text/css'>
-           
+          
     <script src="js/modernizr.js"></script>
   </head>
   <body>
@@ -18,10 +18,10 @@
           <header class="cf">
             <div class="row">
 
-           <div class="small-12 medium-6 columns">   
+           <div class="small-12 medium-6 columns">  
               <h1>Belkira</h1>
             </div>
-          
+         
             <div class="small-12 medium-6 columns">
               <h2>Paddock to plate</h2>
 <!--             </div>
@@ -32,10 +32,10 @@
         </div>
 
       </div>
-       
+      
       <div class="row">
         <div class="small-12 columns"><!-- these to squash to lines for mobile -->
-        
+       
           <nav>
             <div class="small-3 columns">
               <div id="about" class="nav-item current">
@@ -71,7 +71,7 @@
     <div class="row"><!-- MAY TAKE THIS OUT -->
       <div class="small-12 columsn">
         <div id="dividerImage">
-          <img src="http://placehold.it/1000x100">
+          <img src="images/farmbw.jpg">
         </div>
 
       </div>
@@ -96,7 +96,7 @@
 
         </div>
 
-        <div classe="small-12 columns">
+        <div class="small-12 columns">
           <div id="aboutContent" class="nav-content current">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -105,6 +105,7 @@
             cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
             proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
+         
           </div>
 
           <div id="howItWorksContent" class="nav-content">
@@ -132,13 +133,14 @@
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. 
+            consequat.
             </p>
 
             <div class="fluid-wrapper">
-              <iframe src="https://mapsengine.google.com/map/embed?mid=zh6wVD3aD0Yw.kU2DKlDE5y3c" width="640" height="640"></iframe>
+              <div id="map-canvas"></div>
             </div>
-            
+           
+           
           </div>
         </div>
       </div>
@@ -151,7 +153,46 @@
         </div>
 
         <div class="small-12 columns">
-            <img src="images/lamby.jpg">
+              <div class="lamb-tooltip-container">
+                <img id="lamby" src="images/lamby-clean.jpg">
+
+                  <div id="leg-pos" class="lamb-tool">
+                    <span data-tooltip class="has-tip primal-cuts" title="Delicious for roasting">Leg</span>
+                  </div>
+
+                  <div id="chump-pos" class="lamb-tool">
+                    <span data-tooltip class="has-tip primal-cuts" title="Delicious chops or rolled for roasting">Chump</span>
+                  </div>
+
+                  <div id="loin-pos" class="lamb-tool">
+                    <span data-tooltip class="has-tip primal-cuts" title="Shortloin is good for roasting; chops for grilling">Loin</span>
+                  </div>
+
+                  <div id="breast-pos" class="lamb-tool">
+                    <span data-tooltip class="has-tip primal-cuts" title="Rolled for roasting">Breast</span>
+                  </div>
+
+                  <div id="rack-pos" class="lamb-tool">
+                    <span data-tooltip class="has-tip primal-cuts" title="Roasted rack or chops">Rack</span>
+                  </div>
+
+                  <div id="shoulder-pos" class="lamb-tool">
+                    <span data-tooltip class="has-tip primal-cuts" title="Delicious roasted">Shoulder</span>
+                  </div>
+
+                  <div id="neck-pos" class="lamb-tool">
+                    <span data-tooltip class="has-tip primal-cuts" title="Fillets or chops for grilling">Neck</span>
+                  </div>
+
+                  <div id="foreshank-pos" class="lamb-tool">
+                    <span data-tooltip class="has-tip primal-cuts" title="Great in casseroles">Shank</span>
+                  </div>
+
+                  <div id="hindshank-pos" class="lamb-tool">
+                    <span data-tooltip class="has-tip primal-cuts" title="Slow roast for best results">Shank</span>
+                  </div>
+
+              </div>
 
             <div id="lambInstructions">
               <p>Click above to find out more about the delicious cuts available.</p>
@@ -171,11 +212,204 @@
 
         <div class="small-12 medium-6 columns">
           <h3>What You Want</h3>
+
+<!-- PURCHASE OPTIONS -->
+
+<!-- HEADING -->
+          <div class="row" >
+            <div class="cut-type-header">
+              <div class="small-5 columns">Cut</div>
+              <div class="small-2 columns cut-head-right">Price</div>
+              <div class="small-3 columns cut-head-right">Qty</div>
+              <div class="small-2 columns cut-head-right">Total</div>
+            </div>
+          </div>
+
+<!-- LEG OF LAMB -->
+          <div class="row stock-item">
+            <div class="small-5 columns cut-type">Leg</div>
+            <div class="small-2 columns cut-price" id="leg-price">$25.00</div>
+            <div class="small-3 columns cut-qty">
+              <input id="leg-qty" class="number-form item-qty" type="text" placeholder="0" autofocus> 
+            </div>
+            <div class="small-2 columns line-total" id="leg-total">$0.00</div>
+          </div>
+<!-- SHANK -->
+            <div class="row stock-item">
+              <div class="small-5 columns cut-type">Shank</div>
+              <div class="small-2 columns cut-price" id="shank-price">$5.00</div>
+              <div class="small-3 columns cut-qty">
+                <input id="shank-qty" class="number-form" type="text" placeholder="0" autofocus/>
+              </div>
+              <div class="small-2 columns line-total" id="shank-total">$0.00</div>
+            </div>
+
+<!-- CHUMP -->
+            <div class="row stock-item">
+              <div class="small-5 columns cut-type">Chump</div>
+              <div class="small-2 columns cut-price" id="chump-price">$6.00</div>
+              <div class="small-3 columns cut-qty">
+                <input id="chump-qty" class="number-form" type="text" placeholder="0" autofocus/>
+              </div>
+              <div class="small-2 columns line-total" id="chump-total">$0.00</div>
+            </div>
+
+<!-- Breast -->
+            <div class="row stock-item">
+              <div class="small-5 columns cut-type">Rolled Breast</div>
+              <div class="small-2 columns cut-price" id="breast-price">$9.00</div>
+              <div class="small-3 columns cut-qty">
+                <input id="breast-qty" class="number-form" type="text" placeholder="0" autofocus/>
+              </div>
+              <div class="small-2 columns line-total" id="breast-total">$0.00</div>
+            </div>
+
+<!-- Loin -->
+            <div class="row stock-item">
+              <div class="small-5 columns cut-type">Loin</div>
+              <div class="small-2 columns cut-price" id="loin-price">$15.00</div>
+              <div class="small-3 columns cut-qty">
+                <input id="loin-qty" class="number-form" type="text" placeholder="0" autofocus/>
+              </div>
+              <div class="small-2 columns line-total" id="loin-total">$0.00</div>
+            </div>
+
+<!-- Rack -->
+            <div class="row stock-item">
+              <div class="small-5 columns cut-type">Rack</div>
+              <div class="small-2 columns cut-price" id="rack-price">$18.00</div>
+              <div class="small-3 columns cut-qty">
+                <input id="rack-qty" class="number-form" type="text" placeholder="0" autofocus/>
+              </div>
+              <div class="small-2 columns line-total" id="rack-total">$0.00</div>
+            </div>
+
+
+<!-- Shoulder -->
+            <div class="row stock-item">
+              <div class="small-5 columns cut-type">Shoulder</div>
+              <div class="small-2 columns cut-price" id="shoulder-price">$23.00</div>
+              <div class="small-3 columns cut-qty">
+                <input id="shoulder-qty" class="number-form" type="text" placeholder="0" autofocus/>
+              </div>
+              <div class="small-2 columns line-total" id="shoulder-total">$0.00</div>
+            </div>
+
+<!-- Neck -->
+            <div class="row stock-item">
+              <div class="small-5 columns cut-type">Neck Fillet</div>
+              <div class="small-2 columns cut-price" id="neck-price">$7.00</div>
+              <div class="small-3 columns cut-qty">
+                <input id="neck-qty" class="number-form" type="text" placeholder="0" autofocus/>
+              </div>
+              <div class="small-2 columns line-total" id="neck-total">$0.00</div>
+            </div>
+
+<!-- TOTAL -->
+            <div class="row grand-total-line">
+              <div class="small-9 columns total-row">TOTAL</div>
+              <div class="small-2 columns" id="grand-total">$0.00</div>
+            </div>
+
+            <div class="row">
+              <div class="small-12 columns">
+                <a class="button [tiny]" id="update-total">Update total-row</a>
+             </div>
+          </div>
         </div>
 
-        <div class="small-12 medium-6 columns">
+
+        <div class="small-12 medium-6 columns contact-section">
           <h3>Your Details</h3>
-        </div>
+       
+
+<!-- Input row -->
+            <div class="row">
+              <div class="contact-header">
+              </div>
+           </div>
+
+          <div class="row contact-row">
+              <div class="small-5 columns contact-input">Name</div>
+              <div class="small-7 columns input-details">
+                <input class="text-form" type="text" placeholder="John" />
+              </div>
+            </div>
+
+          <div class="row contact-row">
+              <div class="small-5 columns contact-input">House #</div>
+              <div class="small-2 columns input-details">
+                <input class="text-form" type="text" placeholder="" />
+              </div>
+              <div class="small-5 columns contact-input"></div>
+            </div>
+
+            <div class="row contact-row">
+              <div class="small-5 columns contact-input">Address</div>
+              <div class="small-7 columns input-details">
+                <input class="text-form" type="text" placeholder="" />
+              </div>
+            </div>
+
+            <div class="row contact-row">
+              <div class="small-5 columns contact-input">Town/City</div>
+              <div class="small-7 columns input-details">
+                <input class="text-form" type="text" placeholder="" />
+              </div>
+            </div>
+
+          <div class="row contact-row">
+              <div class="small-5 columns contact-input">Post Code</div>
+              <div class="small-3 columns input-details">
+                <input class="text-form" type="text" placeholder="" />
+              </div>
+              <div class="small-4 columns contact-input"></div>
+            </div>
+
+          <div class="row contact-row">
+              <div class="small-5 columns contact-input">Your email</div>
+              <div class="small-7 columns input-details">
+                <input class="text-form" type="email" placeholder="" />
+              </div>
+            </div>
+
+         <div class="row contact-row">
+              <div class="small-5 columns contact-input">Telephone</div>
+              <div class="small-7 columns input-details">
+                <input class="text-form" type="text" placeholder="" />
+              </div>
+            </div>
+
+         <div class="row contact-row">
+              <div class="small-5 columns contact-input">Collect date</div>
+              <div class="small-5 columns input-details">
+                <input class="text-form" type="date" placeholder="dd/mm/yy" />
+              </div>
+              <div class="small-2 columns contact-input"></div>
+            </div>
+
+            <div class="row contact-row order-button-row">
+              <div class="small-7 columns contact-input"></div>
+              <div class="small-5 columns contact-input ">
+                <form action="" method="POST">
+                  <script
+                    src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                    data-key="pk_test_6pRNASCoBOKtIshFeQd4XMUh"
+                    data-amount="2000"
+                    data-name="Belkira"
+                    data-description="2 widgets ($20.00)"
+                    data-image="">
+                  </script>
+                </form></div>
+              </div>
+            </div>
+
+
+
+
+              
+            </div>
+          </div>
 
       </div>
     </div>
@@ -185,10 +419,35 @@
 
       <div class="small-12 columns">
         <footer>
-          <div class="small-1 columns">Contact</div><!-- Does this go to new page? -->
-          <div class="small-1 columns">FAQ</div><!-- Does this go to new page? -->
-          <div class="small-1 columns">Terms</div><!-- Does this go to new page? -->
-          <div class="small-9 columns">Social</div>
+          <div class="small-12 medium-6 columns footer-left">
+            <div class="small-4 columns">Contact</div><!-- Does this go to new page? -->
+            <div class="small-4 columns">FAQ</div><!-- Does this go to new page? -->
+            <div class="small-4 columns">Terms</div>
+          </div>
+
+            <div class="small-12 medium-6 columns footer-right">
+              <div class="socials">
+                <ul>
+
+                  <li class="ir sprite social-icons facebook">
+                    <a href="" target="_blank">FaceBook</a>
+                  </li>
+
+                  <li class="ir sprite social-icons twitter">
+                    <a href="" target="_blank">Twitter</a>
+                  </li> 
+
+                  <li class="ir sprite social-icons google">
+                    <a href="" target="_blank">Google +</a>
+                  </li>
+
+                  <li class="ir sprite social-icons instagram">
+                    <a href="" target="_blank">Instagram</a>
+                  </li>
+
+                </ul> 
+              </div>  
+            </div>
 
         </footer>
 
@@ -203,16 +462,22 @@
   </script> -->
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
   <script src="js/main.js"></script>
-  <script type="text/javascript" src="js/LiteTooltip.min.js"></script>
-
+  <script src="js/checkout.js"></script>
+  <script src="js/jquery.js"></script>
+  <script src="js/foundation.min.js"></script>
+  <script src="js/foundation.tooltip.js"></script>
+  <script>$(document).foundation();</script>
+  <script src="https://maps.googleapis.com/maps/api/js"></script>
+  <script src="js/map.js"></script>
+<!--<script type="text/javascript" src="js/LiteTooltip.min.js"></script>-->
+<!--
   <script type="text/javascript">
     $("a").LiteTooltip();
   </script>
-  
+   -->
 
   </body>
 </html>
-
 
 
 
