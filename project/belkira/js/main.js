@@ -1,3 +1,8 @@
+/**
+@desc Controls the hiding and unhiding of sections at the top of the page
+*/
+
+
 $(function() {
 
 	$(" .nav-item").on("click", function(event) {
