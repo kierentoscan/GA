@@ -8,23 +8,43 @@ body {
 }
 
 header {
-     margin-bottom: #000 solid; 
+     margin-bottom: #000 solid;
+     width: 100%;
+     z-index: 999;
+     position: fixed;
+     background-color: white;
 }
+
+.content {
+    padding-top: 18rem;
+}
+    @media only screen and (max-width: 40em) {
+        .content {
+               padding-top: 16rem;
+               }
+           }
 
 h3 {
      font-size: 2rem;
      text-align: center;
      font-family: 'Great Vibes', cursive;
 }    
+    
+    @media only screen and (max-width: 40em) {
+        h3 {
+               font-size: 1.25rem;
+               }
+           }
+
 
 footer {
-     height: 3rem;
-     line-height: 1rem;
-     color: white;
-     text-align: center;
-     padding-top: 1.5em;
-     font-family: 'Lato', sans-serif;
-     font-weight: 100;
+    line-height: 1rem;
+    color: white;
+    text-align: center;
+   /* padding-top: 1.5em;*/
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    width: 100%
 }
 
 footer ul {
@@ -39,8 +59,7 @@ footer li {
 .footer-left,
 .footer-right   {
     background-color: black;
-    height: 3rem;
-    line-height: 3rem;  
+     
 }
 
 header h1 {
@@ -89,12 +108,13 @@ div.small-12.columns nav {
      padding-top: 0.1rem;
 }
 
-div#OrderHead h2 {
+#OrderHead h2 {
     border-top: 1px solid #D1D1D1;
     border-bottom: 1px solid #D1D1D1;
     margin-top: 1rem;
     text-align: center;
     font-family: 'Great Vibes', cursive;
+    padding-top: 0.7rem;
 }
         
 
@@ -350,6 +370,8 @@ nav a:hover {
 
 /*ORDER*/
 
+
+
 .cut-type-header {
     border-bottom: 1px solid #D1D1D1;
     height: 1.5rem; 
@@ -360,7 +382,7 @@ nav a:hover {
 .stock-item {
     line-height: 2.3125rem;
     font-weight: 200;
-    font-size: 1rem;
+    font-size: small;
 }
 
 .cut-head-right {
@@ -383,6 +405,7 @@ border-top: 2px solid #d1d1d1;
 #grand-total {
     text-align: right;
     font-weight: bold;
+    font-size: small;
 }
 
 .contact-header {
@@ -399,16 +422,84 @@ border-top: 2px solid #d1d1d1;
 
 }
 
-.text-form {
+.text-form {    
     text-align: left;
 }
 
 .contact-row {
     line-height: 2.3125rem;
     font-weight: 200;
-    font-size: 1rem;
+    font-size: small;
 }
 
+.total-row  {
+    margin-bottom: 1rem;
+    font-weight: bold;
+    font-size: small;
+}
+.checkout-buttons li a {
+     background: linear-gradient(#7dc5ee,#008cdd 85%,#30a2e4);
+     color: white;
+     border-radius: 4px;
+
+}
+
+.stripe-button-el span {
+    background-image: linear-gradient(#f79992,#f79992 85%,#f79992);
+    color: #333333;
+    border-radius: 4px;
+
+}
+
+.filler {
+    height: 7rem;
+}
+    @media only screen and (max-width: 40em) {
+          .filler {
+               height: 0rem;
+          }
+     }
+
+.accordion #p {
+    color: black;
+}
+
+input[type="text"] {
+    font-size: small;
+}
+
+input[type="date"] {
+    font-size: small;
+}
+
+label {
+    font-size: small;
+}
+
+.accordion .content p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+}
+
+
+/*BORDERS*/ 
+
+.row.total-content {
+border-left: .95rem solid black;
+border-right: .95rem solid black;
+}
+
+.tabs-content {
+margin-bottom: 1.5rem;
+width: 100%;
+color: black;
+text-align: left;
+}
+
+#OrderSection {
+margin-left: 0;
+margin-right: 0;
+}
 
 
 
