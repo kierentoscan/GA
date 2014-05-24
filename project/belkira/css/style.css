@@ -15,26 +15,17 @@ header {
      background-color: white;
 }
 
-.content {
-    padding-top: 18rem;
-}
-    @media only screen and (max-width: 40em) {
-        .content {
-               padding-top: 16rem;
-               }
-           }
-
 h3 {
      font-size: 2rem;
      text-align: center;
      font-family: 'Great Vibes', cursive;
 }    
     
-    @media only screen and (max-width: 40em) {
+/*    @media only screen and (max-width: 40em) {
         h3 {
                font-size: 1.25rem;
                }
-           }
+           }*/
 
 
 footer {
@@ -130,7 +121,7 @@ nav a:hover {
      color: #878787;
 }
 
-/*CLASSES*/
+/*GENERAL CLASSES*/
 
 .sectionHead {
      border-bottom: 1px solid #D1D1D1;
@@ -145,7 +136,6 @@ nav a:hover {
 .nav-header {
      display: none;
 }
-
 
 .nav-content.current {
   display: block;
@@ -169,11 +159,33 @@ nav a:hover {
     border: none;
 }
 
+.primal-cuts {
+     font-family: 'Great Vibes', cursive;
+     font-size: 1rem;
+     letter-spacing: .1rem;
+}
+
+    @media only screen and (max-width: 40em) {
+          .primal-cuts {
+               font-size: .8rem;
+          }
+     }
+
+.content {
+    padding-top: 18rem;
+}
+    @media only screen and (max-width: 40em) {
+        .content {
+               padding-top: 16rem;
+               }
+           }
+
+
 /*MAP*/
 
 #map-canvas {
     height: 380px;
-    width: 280px;
+    width: auto;
     position: relative;
 }
 
@@ -285,17 +297,7 @@ nav a:hover {
      height: 10px;
 }
 
-.primal-cuts {
-     font-family: 'Great Vibes', cursive;
-     font-size: 1rem;
-     letter-spacing: .1rem;
-}
 
-@media only screen and (max-width: 40em) {
-          .primal-cuts {
-               font-size: .8rem;
-          }
-     }
 
 
 
@@ -368,8 +370,7 @@ nav a:hover {
      background-position-y: -50px;
 }
 
-/*ORDER*/
-
+/*ORDER & DETAILS */
 
 
 .cut-type-header {
@@ -390,7 +391,6 @@ nav a:hover {
 
 }
 
-
 .line-total  {
     text-align: right;
     font-weight: 300;
@@ -406,6 +406,8 @@ border-top: 2px solid #d1d1d1;
     text-align: right;
     font-weight: bold;
     font-size: small;
+    margin-right: 0.25rem;
+
 }
 
 .contact-header {
@@ -460,10 +462,6 @@ border-top: 2px solid #d1d1d1;
           }
      }
 
-.accordion #p {
-    color: black;
-}
-
 input[type="text"] {
     font-size: small;
 }
@@ -474,6 +472,12 @@ input[type="date"] {
 
 label {
     font-size: small;
+}
+
+/*ACCORDION*/
+
+.accordion #p {
+    color: black;
 }
 
 .accordion .content p {

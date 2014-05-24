@@ -28,6 +28,8 @@ $("#update-total").click(function() {
 
 	$('#grand-total').text( '$' + parseFloat(grandTotal).toFixed(2))
 
+	$('#stripeForm').attr( "script data-amount", grandTotal );
+
 
 });
 
