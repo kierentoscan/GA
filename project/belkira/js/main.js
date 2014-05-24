@@ -5,10 +5,15 @@
 
 $(function() {
 
-	$(" .nav-item").on("click", function(event) {
+	$(".nav-item a").on("click", function(event) {
 		event.preventDefault();
 		$(".nav-header, .nav-content").removeClass("current");
 		$(this).addClass("current");
+
+	    $('html, body').animate({
+	        scrollTop: $( $(this).attr('href') ).offset().top - 300
+	    }, 500);
+
 	})
 
 	$("#about").on("click", function(event) {
